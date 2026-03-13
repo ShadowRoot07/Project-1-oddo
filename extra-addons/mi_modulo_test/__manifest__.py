@@ -4,7 +4,7 @@
     'author': 'ShadowRoot07',
     'category': 'Tools',
     'summary': 'Módulo de prueba creado desde un móvil usando Termux y NeoVim',
-    'depends': ['base', 'product'], # 'product' es necesario para los productos
+    'depends': ['base', 'product'],
     'data': [
         'security/ir.model.access.csv',
         'views/producto_view.xml',
