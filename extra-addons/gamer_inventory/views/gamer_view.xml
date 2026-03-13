@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_gamer_setup_tree" model="ir.ui.view">
+        <field name="name">gamer.setup.tree</field>
+        <field name="model">gamer.setup</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="cpu"/>
+                <field name="gpu"/>
+                <field name="has_rgb"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_gamer_setup_form" model="ir.ui.view">
+        <field name="name">gamer.setup.form</field>
+        <field name="model">gamer.setup</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="has_rgb"/>
+                        </group>
+                        <group>
+                            <field name="cpu"/>
+                            <field name="gpu"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_gamer_setup" model="ir.actions.act_window">
+        <field name="name">Mis Setups Gamer</field>
+        <field name="res_model">gamer.setup</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_gamer_root" name="Gamer Apps" sequence="10"/>
+    <menuitem id="menu_gamer_setup" name="Setups" parent="menu_gamer_root" action="action_gamer_setup"/>
+</odoo>
+
