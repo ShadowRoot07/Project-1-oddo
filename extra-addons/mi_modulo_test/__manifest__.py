@@ -5,10 +5,10 @@
     'category': 'Tools',
     'summary': 'Módulo de prueba creado desde un móvil usando Termux y NeoVim',
     'depends': ['base', 'product'],
-    'data': [
+        'data': [
         'security/ir.model.access.csv',
         'views/producto_view.xml',
-        'data/import_productos.xml',
+        # 'data/import_productos.xml',  <-- COMENTA ESTA LÍNEA CON UN #
     ],
     'installable': True,
     'application': True,
