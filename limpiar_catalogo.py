@@ -28,5 +28,5 @@ with open(input_file, mode='r', encoding='utf-8') as infile:
             
             writer.writerow(new_row)
 
-print(f"✅ ¡Hecho! Catálogo limpio guardado en {output_file}")
 
+print(f"✅ ¡Hecho! Catálogo limpio guardado en {output_file}")
