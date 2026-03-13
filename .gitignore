@@ -1,0 +1,24 @@
+# --- Extensiones para blindar tu repo ---
+
+# Odoo temporal y datos pesados
+data/
+filestore/
+sessions/
+
+# NeoVim / Vim (específicos de Termux)
+*.tmp
+tags
+Session.vim
+.netrwhist
+
+# Archivos de sistema y logs de Docker
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+docker-compose.override.yml
+
+# Archivos de OS y carpetas ocultas de editores
+.DS_Store
+.idea/
+.vscode/
+.env
